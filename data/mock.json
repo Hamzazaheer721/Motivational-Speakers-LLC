@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "1",
+    "name": "Jane Doe",
+    "length": "18",
+    "date": "2020-04-20",
+    "location": "New York",
+    "cost": "20",
+    "url": "./images/event-1.png",
+    "title": "Whatsapp introduces Emojis"
+  },
+  {
+    "_id": "2",
+    "name": "Elie",
+    "length": "12",
+    "date": "2021-04-20",
+    "location": "California",
+    "cost": "25",
+    "url": "./images/event-2.png",
+    "title": "Node, NPM and You"
+  },
+  {
+    "_id": "3",
+    "name": "Brant Bridge",
+    "length": "28",
+    "date": "2022-07-21",
+    "location": "New York",
+    "cost": "29",
+    "url": "./images/event-1.png",
+    "title": "Facebook Developer Conference"
+  },
+  {
+    "_id": "4",
+    "name": "Christian Bale",
+    "length": "10",
+    "date": "2023-07-21",
+    "location": "New York",
+    "cost": "9",
+    "url": "./images/event-2.png",
+    "title": "Tesla announces Cyber truck which is strong enough to carry anything"
+  },
+  {
+    "_id": "5",
+    "name": "Keith Arthur",
+    "length": "40",
+    "date": "2019-07-21",
+    "location": "Florida",
+    "cost": "10",
+    "url": "./images/event-1.png",
+    "title": "NASA to launch new rocket"
+  }
+]

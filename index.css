@@ -1,0 +1,262 @@
+/* VARIABLES */
+:root {
+  --primary: rgb(10, 10, 77);
+  --secondary: rgb(227, 39, 92);
+  --tertiary: gray;
+  --light-gray: #E9EBEE;
+}
+
+/* BASE */
+* {
+  font-size: 52.5%; 
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /* Box sizing property is not inherited by itself, so by using this, we inherit it */
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  max-width: 180rem;
+}
+
+/* UTILITY */
+.color-primary{
+  color: var(--primary) !important;
+  font-size: inherit;
+}
+
+.color-secondary {
+  color: var(--secondary) !important;
+  font-size: inherit;
+}
+
+.tertiary-color{
+  color: var(--tertiary);
+}
+
+.tertiary-color-light {
+  color: var(--tertiary);
+  opacity: 0.5;
+}
+
+.font-italics {
+  font-style: italic;
+  font-size: inherit;
+}
+
+.font-bold {
+  font-weight: 700;
+  font-size: inherit;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 7rem;
+  color: var(--primary);
+  line-height: 1.1;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--primary);
+}
+
+.truncate-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* ICONS */
+.material-icons {
+  font-size: inherit;
+}
+
+/* HEADER SECTION */
+.header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;  
+  border-bottom: 0.1px dashed black;
+}
+
+.header-logo {
+  height: 10rem;
+  width: 20rem;
+}
+
+.header-nav ul{
+  list-style: none;
+  display: flex;
+}
+
+.header-nav a{
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 1.5rem;
+  font-size: 2rem;
+}
+
+/* EVENT SECTION */
+.event {
+  width: 100%;
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-details {
+  flex: 1 0 40%;
+}
+
+.event-details__paragraph{
+  margin: 1.5rem 1rem;
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+.event-images {
+  flex: 1 0 60%;
+  background-image:url('./images/top-graphic.png');
+  min-width: 25rem;
+  height: 50rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* CARDS */
+.cards{
+  padding: 10rem;
+  min-height: 60rem;
+  font-size: 4rem !important;
+  background-color: var(--light-gray);
+  overflow: scroll;
+}
+
+.cards-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 4rem 0;
+}
+
+.cards-display-section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex: 1 0 60%;
+}
+
+.cards-display-section__card {
+  flex-basis: calc(50% - 1.5rem);
+  display: flex;
+  flex-direction: column;
+  height: 25.5rem;
+  border-radius: 0.3rem;
+  overflow: hidden; /* To make div with img have border-radius */
+  cursor: pointer;
+}
+
+.cards-display-section__card--image--section {
+  flex: 1 0 60%;
+  position:relative;
+}
+
+.cover-text {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.8rem 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.person-icon{
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.person-data{
+  font-size: inherit;
+  font-weight: 100;
+}
+
+.hw-max{
+  width: 100%;
+  height: 100%;
+}
+
+.cover-image-secondary{
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/event-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cards-display-section__card--title {
+  flex: 1 0 40%;
+  background: white;
+  padding: 1rem 2.5rem;
+}
+
+.cards-display-section__card--title-heading {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.cards-display-section__card--title-details {
+  color: var(--tertiary);
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+
+
+.cards-filter-section{
+  background-color: black;
+  flex: 1 0 40%;
+}
+
+/* FOOTER */
+.footer {
+  padding: 5rem 20rem 5rem 10rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-details {
+  font-size: 1.5rem;
+}
+
+.footer-icons {
+  list-style: none;
+  display: flex;
+  gap: 1rem; 
+  font-size: 6rem;  
+  color: var(--tertiary);
+}
+
+
+/* Buttons */
