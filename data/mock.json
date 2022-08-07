@@ -25,7 +25,7 @@
     "length": "28",
     "date": "2022-07-21",
     "location": "New York",
-    "cost": "29",
+    "cost": "30",
     "url": "./images/event-1.png",
     "title": "Facebook Developer Conference"
   },
@@ -35,14 +35,14 @@
     "length": "10",
     "date": "2023-07-21",
     "location": "New York",
-    "cost": "9",
+    "cost": "15",
     "url": "./images/event-2.png",
     "title": "Tesla announces Cyber truck which is strong enough to carry anything"
   },
   {
     "_id": "5",
     "name": "Keith Arthur",
-    "length": "40",
+    "length": "30",
     "date": "2019-07-21",
     "location": "Florida",
     "cost": "10",

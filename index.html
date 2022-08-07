@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script defer src="./js/index.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
@@ -55,9 +59,91 @@
         Events for <span class="color-secondary"> every occassion </span>
       </div>
       <div class="cards-container">
-        <div class="cards-display-section" id="cards">
+        <div class="cards-display-section" id="cards"></div>
+        <div class="cards-filter-section">
+          <div class="cards-filter-section__input--container">
+            <i class="fa fa-search search-icon"></i>
+            <input
+              id="search-field"
+              class="cards-input"
+              type="text"
+              placeholder="Search by name or location..."
+            />
+          </div>
+
+          <div class="cards-filter-section__container">
+            <label id="label" class="label" for="location"
+              >Event Location</label
+            >
+            <select id="location" name="location" class="select-field">
+              <option value="New York">New York</option>
+              <option value="California">California</option>
+              <option value="Florida">Florida</option>
+            </select>
+          </div>
+
+          <div class="cards-filter-section__container">
+            <label id="label" class="label" for="from">Event Length</label>
+            <div class="give-gap">
+              <select id="from" name="from" id="from" class="select-field">
+                <option value="5">5 minutes</option>
+                <option value="15">15 minutes</option>
+                <option value="30">30 minutes</option>
+              </select>
+              <label id="label" class="label" for="to">to</label>
+              <select id="to" name="to" id="location" class="select-field">
+                <option value="5">5 minutes</option>
+                <option value="15">15 minutes</option>
+                <option value="30">30 minutes</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="cards-filter-section__container">
+            <label id="label" class="label" for="from">Seat Cost</label>
+            <div class="give-gap">
+              <div class="cards-filter-section__input--container sm-input">
+                <i class="fa fa-dollar dollar-icon"></i>
+                <input
+                  id="costFrom"
+                  class="cards-input"
+                  type="text"
+                  placeholder="Min"
+                />
+              </div>
+              <label id="label" class="label" for="to">to</label>
+              <div class="cards-filter-section__input--container sm-input">
+                <i class="fa fa-dollar dollar-icon"></i>
+                <input
+                  id="costTo"
+                  class="cards-input"
+                  type="text"
+                  placeholder="Max"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-filter-section__container" id="range-values">
+            <label id="label" class="label" for="from">Event Size</label>
+            &nbsp;
+            <div class="give-gap">
+              <label id="label" class="label" for="from">From</label>
+              <span class="label-range"></span>
+              &nbsp;
+              <label id="label" class="label" for="from">To</label>
+              <span class="label-range"></span>
+              &nbsp;
+            </div>
+          </div>
+
+          <div class="cards-filter-section__range--container">
+            <span class="multi-range">
+              <input type="range" min="0" max="30" value="5" id="lower" />
+              <input type="range" min="0" max="30" value="25" id="upper" />
+            </span>
+          </div>
         </div>
-        <div class="cards-filter-section">Filter</div>
       </div>
     </div>
 
