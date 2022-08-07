@@ -307,7 +307,7 @@ body {
   font-size: 1.5rem;
 }
 
-.give-gap{
+.give-gap {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -405,5 +405,3 @@ input[type='range']::-webkit-slider-thumb::before {
   font-size: 6rem;
   color: var(--tertiary);
 }
-
-/* Buttons */
